@@ -167,7 +167,7 @@ img {
     }
   }
 
-  /* iphone 13 , iphone 14 */
+  /* iphone 13 , iphone 14, iphone 13 pro */
   @media (min-height: 662px) {
     .flower-img img {
       width: 30%;
@@ -176,13 +176,14 @@ img {
       width: 30%;
     }
     .headline {
-      width: 60%;
+      width: 55%;
     }
     .gift-n-model {
-      width: 90%;
+      width: 88%;
     }
     .btn {
       margin-bottom: 1.3rem;
+      font-size: 1.8rem;
     }
     .scene-end-btn {
       font-size: 1.2rem;
