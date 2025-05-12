@@ -121,7 +121,7 @@ img {
   position: fixed;
   bottom: -1rem;
 }
-#scene-end{
+#scene-end {
   display: none;
 }
 
@@ -243,6 +243,26 @@ img {
   }
 }
 
+#dont-support-ui {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  #scene-end,
+  #scene-first {
+    display: none !important;
+  }
+  #dont-support-ui {
+    display: flex;
+  }
+}
 @keyframes blinks {
   0% {
     opacity: 1;
