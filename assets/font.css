@@ -1,126 +1,126 @@
 /* Lagu Sans */
 @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ Thin.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ Thin.otf");
     font-weight: 100;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ Thin\ Italic.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ Thin\ Italic.otf");
     font-weight: 100;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ ExtraLight.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ ExtraLight.otf");
     font-weight: 200;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ ExtraLight\ Italic.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ ExtraLight\ Italic.otf");
     font-weight: 200;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ Light.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ Light.otf");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ Light\ Italic.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ Light\ Italic.otf");
     font-weight: 300;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu_Sans_Regular.otf");
+    src: url("../assets/fonts/Lagu_Sans_Regular.otf");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu_Sans_Regular_Italic.otf");
+    src: url("../assets/fonts/Lagu_Sans_Regular_Italic.otf");
     font-weight: 400;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ Medium.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ Medium.otf");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ Medium\ Italic.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ Medium\ Italic.otf");
     font-weight: 500;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ SemiBold.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ SemiBold.otf");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ SemiBold\ Italic.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ SemiBold\ Italic.otf");
     font-weight: 600;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ Bold.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ Bold.otf");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ Bold\ Italic.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ Bold\ Italic.otf");
     font-weight: 700;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ ExtraBold.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ ExtraBold.otf");
     font-weight: 800;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ ExtraBold\ Italic.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ ExtraBold\ Italic.otf");
     font-weight: 800;
     font-style: italic;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ Black.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ Black.otf");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "Lagu Sans";
-    src: url("assets/fonts/Lagu\ Sans\ Black\ Italic.otf");
+    src: url("../assets/fonts/Lagu\ Sans\ Black\ Italic.otf");
     font-weight: 900;
     font-style: italic;
     font-display: swap;
