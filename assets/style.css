@@ -76,6 +76,7 @@ img {
   padding: 1rem 2rem;
   border-radius: 5px;
   animation: blinks 1s infinite;
+  font-weight: bold;
 }
 
 .privacy-policy {
