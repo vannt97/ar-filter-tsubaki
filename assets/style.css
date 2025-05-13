@@ -72,11 +72,11 @@ img {
   display: inline-block;
   color: white;
   background: #d2002c;
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding: 1rem 2rem;
   border-radius: 5px;
   animation: blinks 1s infinite;
-  font-weight: bold;
+
 }
 
 .privacy-policy {
