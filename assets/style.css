@@ -23,6 +23,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+#scene-layout {
+  position: relative;
+  z-index: 9;
+  height: 100%;
+  background: white;
+}
 #layout-size {
   position: fixed;
 }
@@ -75,8 +81,7 @@ img {
   text-transform: uppercase;
   padding: 1rem 2rem;
   border-radius: 5px;
-  animation: blinks 1s infinite;
-
+  /* animation: blinks 1s infinite; */
 }
 
 .privacy-policy {
@@ -289,4 +294,24 @@ img {
   100% {
     transform: scale(1);
   }
+}
+
+#unity-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.toastify{
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  line-height: normal;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.toastify-avatar{
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: 1px;
 }
