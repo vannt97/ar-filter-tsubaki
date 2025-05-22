@@ -11,30 +11,64 @@ const getBackHomeELement = () => {
   return document.getElementById("back-home");
 };
 
+const getSceneFirstElement = () => {
+  return document.getElementById("scene-first");
+};
+const getSceneEndElement = () => {
+  return document.getElementById("scene-end");
+};
+
+const getBtnShareElement = () => {
+  return document.getElementById;
+};
+
+const handleShowSceneFirstElement = (val) => {
+  const element = getSceneFirstElement();
+  if (!element) return;
+  element.style.display = val ? "block" : "none";
+};
+const handleShowSceneEndElement = (val) => {
+  const element = getSceneEndElement();
+  if (!element) return;
+  element.style.display = val ? "block" : "none";
+};
+
+function copyToClipboard(coptyText, callback) {
+  // Create a "hidden" input
+  let copyText = document.createElement("input");
+  coptyText.style.position = "absolute";
+  coptyText.style.zIndex = "-999";
+  // Assign it the value of the specified element
+  copyText.setAttribute("value", coptyText);
+  document.body.appendChild(copyText);
+  copyText.select();
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+  document.body.removeChild(copyText);
+  callback();
+}
+
 const handleEventScanBtn = () => {
-  let sceneFirst = document.getElementById("scene-first");
-  if (sceneFirst) {
-    if (!isCheckedPrivacyPolicy())
-      return showMessage(
-        "Hãy tick vào điều khoản để được tham gia minigame nhé!"
-      );
-    sceneFirst.style.display = "none";
-    let sceneEnd = document.getElementById("scene-end");
-    if (sceneEnd) {
-      sceneEnd.style.display = "block";
-    }
-  }
+  if (!isCheckedPrivacyPolicy())
+    return showMessage(
+      "Hãy tick vào điều khoản để được tham gia minigame nhé!"
+    );
+
+  handleShowSceneFirstElement(false);
+  createMediaRecorder();
 };
 
 const handleEventBackHomeBtn = () => {
-  let sceneEnd = document.getElementById("scene-end");
-  if (sceneEnd) {
-    sceneEnd.style.display = "none";
-    let sceneFirst = document.getElementById("scene-first");
-    if (sceneFirst) {
-      sceneFirst.style.display = "block";
-    }
-  }
+  // let sceneEnd = document.getElementById("scene-end");
+  // if (sceneEnd) {
+  //   sceneEnd.style.display = "none";
+  //   let sceneFirst = document.getElementById("scene-first");
+  //   if (sceneFirst) {
+  //     sceneFirst.style.display = "block";
+  //   }
+  // }
+  // handleShowSceneEndElement(false);
+  // handleShowSceneFirstElement(true);
 };
 
 const setUpHandleEventScanBtn = () => {

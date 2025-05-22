@@ -5,7 +5,6 @@ var mediaRecorder = null;
 var mediaStream = null;
 var video = document.querySelector("video");
 var containerType = "video/webm";
-let isFirstRun = true;
 
 function NativeSetCanvasRecorder() {
     console.log("native set canvas <<<<<<<<<<<<<<<<<<");
@@ -41,7 +40,6 @@ function createMediaRecorder() {// Create MediaRecorder for video only
     }
     mediaRecorder = new MediaRecorder(mediaStream, options);
     console.log("MediaRecorder created:", mediaRecorder);
-    if (isFirstRun) { mediaStart(); }//console.log("trial start");
 }
 function mediaStart() {// Start recording
     console.log("!!!!!!!!!!!!!!start recording is called");
@@ -51,14 +49,10 @@ function mediaStart() {// Start recording
     mediaRecorder.onstop = () => {
         blob = new Blob(chunks, { type: mediaRecorder.mimeType });
         videoURL = URL.createObjectURL(blob);
-        if (isFirstRun) { isFirstRun = false; }//console.log("trial completed");            
-        else{
-            if (typeof window.NativeSendBlobUrl !== "undefined") { window.NativeSendBlobUrl(videoURL); }
-        }        
+        if (typeof window.NativeSendBlobUrl !== "undefined") { window.NativeSendBlobUrl(videoURL); }        
     };
     mediaRecorder.start();
     console.log("Recording started");
-    if (isFirstRun) { setTimeout(mediaStop, 500); }//console.log("trial end");        
 }
 function mediaStop() {// Stop recording
     if (mediaRecorder && mediaRecorder.state === "recording") {

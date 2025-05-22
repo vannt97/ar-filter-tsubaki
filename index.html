@@ -7,95 +7,138 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
-    <title>Tsubaki | AR</title>
+    <!-- ///////////////////////////////////////// -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+    <!-- FB -->
+    <meta property="og:url" content="/" />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:image:url" content="./assets/images/thumbnail.png" />
+    <meta property="og:image:type" content="website" />
+    <!-- FB -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="/" />
+
+    <meta property="twitter:image" content="./assets/images/thumbnail.png" />
+
+    <meta name="title" content="CÙNG TSUBAKI CHĂM TÓC, SĂN QUÀ CHẤT" />
+    <meta
+      name="description"
+      content="Khám phá các dòng sản phẩm TSUBAKI và nhận thật nhiều quà hấp dẫn"
+    />
+    <meta property="og:title" content="CÙNG TSUBAKI CHĂM TÓC, SĂN QUÀ CHẤT" />
+    <meta
+      property="og:description"
+      content="Khám phá các dòng sản phẩm TSUBAKI và nhận thật nhiều quà hấp dẫn"
+    />
+    <meta property="og:image" content="./assets/images/thumbnail.png" />
+    <meta
+      property="og:image:alt"
+      content="CÙNG TSUBAKI CHĂM TÓC, SĂN QUÀ CHẤT"
+    />
+    <meta
+      property="og:site_name"
+      content="CÙNG TSUBAKI CHĂM TÓC, SĂN QUÀ CHẤT"
+    />
+    <meta
+      property="twitter:title"
+      content="CÙNG TSUBAKI CHĂM TÓC, SĂN QUÀ CHẤT"
+    />
+    <meta
+      property="twitter:description"
+      content="Khám phá các dòng sản phẩm TSUBAKI và nhận thật nhiều quà hấp dẫn"
+    />
+    <!-- ////////////////// -->
+    <title>CÙNG TSUBAKI CHĂM TÓC, SĂN QUÀ CHẤT</title>
     <link
       rel="stylesheet"
       type="text/css"
       href="./assets/vendor/toastify.min.css"
     />
-    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
-    <link rel="stylesheet" href="TemplateData/style.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="./TemplateData/style.css" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="stylesheet" href="./assets/input.css" />
     <link rel="stylesheet" href="./assets/font.css" />
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body class="dark">
-    <div id="scene-layout">
-      <!-- <div id="layout-size"></div> -->
-      <!-- //////////////////////// -->
-      <div id="scene-end">
-        <div id="back-home" class="flower-img scene-end">
-          <img src="./assets/images/flower-2.png" alt="" />
-        </div>
-        <div class="share-text">
-          <img src="./assets/images/share-text.png" alt="" />
-        </div>
-        <div class="gift">
-          <img src="./assets/images/gift.png" alt="" />
-        </div>
-        <div class="hashtag">
-          <p>#tsubakivietnam</p>
-          <p>#phuchoihuton</p>
-        </div>
-        <div style="text-align: center">
-          <div class="scene-end-btns">
-            <div>
-              <div class="btn scene-end-btn">copy hashtag</div>
-            </div>
-            <div class="btn scene-end-btn share-btn">share</div>
-          </div>
-        </div>
-        <div class="flower-bottom">
-          <img src="./assets/images/flower-bottom.png" alt="" />
-        </div>
+    <!-- <div id="layout-size"></div> -->
+    <!-- //////////////////////// -->
+    <div id="scene-end">
+      <div id="back-home" class="flower-img scene-end">
+        <img src="./assets/images/flower-2.png" alt="" />
       </div>
-      <!-- ///////////////////////// -->
-      <div id="scene-first">
-        <div class="flower-img">
-          <img src="./assets/images/flower-2.png" alt="" />
-        </div>
-        <div class="tsubaki-img">
-          <img src="./assets/images/tsubaki-logo.png" alt="" />
-        </div>
-        <div class="headline">
-          <img src="./assets/images/headline.png" alt="" />
-        </div>
-        <div class="gift-n-model">
-          <img src="./assets/images/model-gift.png" alt="" />
-        </div>
-        <div style="text-align: center">
-          <div id="scan-btn" class="btn">scan chai tsubaki ngay</div>
-        </div>
-        <div class="privacy-policy">
+      <div class="share-text">
+        <img src="./assets/images/share-text.png" alt="" />
+      </div>
+      <div class="gift">
+        <img src="./assets/images/gift.png" alt="" />
+      </div>
+      <div class="hashtag">
+        <p>#tsubakivietnam</p>
+        <p>#phuchoihuton</p>
+      </div>
+      <div style="text-align: center">
+        <div class="scene-end-btns">
           <div>
-            <label
-              for="privacy-policy-checkbox"
-              class="privacy-policy-checkbox"
+            <div
+              onclick="copyToClipboard('#tsubakivietnam #phuchoihuton', showMessage('Đã sao chép'))"
+              class="btn scene-end-btn"
             >
-              <input id="privacy-policy-checkbox" type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
+              copy hashtag
+            </div>
           </div>
-          <div class="">
-            Tôi đồng ý cho Thương hiệu TSUBAKI/ Công ty FT xử lý các dữ liệu cá
-            nhân của tôi (bao gồm hình ảnh, video mà tôi chia sẻ) cho mục đích
-            phân tích nội bộ của Thương hiệu/Công ty, tiếp thị, chăm sóc Khách
-            hàng và các mục đích hợp pháp khác, với các điều khoản và điều kiện
-            tại
-            <a
-              target="_blank"
-              href="https://docs.google.com/document/d/1I5x1TWCJf23jhAj0bIVsz8r8VVlpFw-j/edit"
-              >Chính sách Bảo mật quyền riêng tư</a
-            >
-          </div>
+          <div class="btn scene-end-btn share-btn">share</div>
         </div>
       </div>
-      <div id="dont-support-ui">
-        Trang web này được tối ưu cho thiết bị di động. <br />
-        Vui lòng chuyển sang sử dụng thiết bị di động.
+      <div class="flower-bottom">
+        <img src="./assets/images/flower-bottom.png" alt="" />
       </div>
-      <!-- ///////////////////////// -->
+    </div>
+    <!-- ///////////////////////// -->
+    <div id="scene-first">
+      <div class="flower-img">
+        <img src="./assets/images/flower-2.png" alt="" />
+      </div>
+      <div class="tsubaki-img">
+        <img src="./assets/images/tsubaki-logo.png" alt="" />
+      </div>
+      <div class="headline">
+        <img src="./assets/images/headline.png" alt="" />
+      </div>
+      <div class="gift-n-model">
+        <img src="./assets/images/model-gift.png" alt="" />
+      </div>
+      <div style="text-align: center">
+        <div id="scan-btn" class="btn">scan chai tsubaki ngay</div>
+      </div>
+      <div class="privacy-policy">
+        <div>
+          <label for="privacy-policy-checkbox" class="privacy-policy-checkbox">
+            <input id="privacy-policy-checkbox" type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="">
+          Tôi đồng ý cho Thương hiệu TSUBAKI/ Công ty FT xử lý các dữ liệu cá
+          nhân của tôi (bao gồm hình ảnh, video mà tôi chia sẻ) cho mục đích
+          phân tích nội bộ của Thương hiệu/Công ty, tiếp thị, chăm sóc Khách
+          hàng và các mục đích hợp pháp khác, với các điều khoản và điều kiện
+          tại
+          <a
+            target="_blank"
+            href="https://docs.google.com/document/d/1I5x1TWCJf23jhAj0bIVsz8r8VVlpFw-j/edit"
+            >Chính sách Bảo mật quyền riêng tư</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="dont-support-ui">
+      <img src="./assets/images/kv-desktop.png" alt="" />
     </div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
@@ -110,11 +153,8 @@
       </div>
     </div>
     <div id="unity-fullscreen-button" style="display: none"></div>
-    <script
-      type="text/javascript"
-      src="./assets/vendor/toastify-js.js"
-    ></script>
-    <script src="videoRecorder.js" type="text/javascript"></script>
+    <script src="./assets/vendor/toastify-js.js"></script>
+    <script src="videoRecorder.js?v=1" type="text/javascript"></script>
     <script src="./assets/main.js"></script>
     <script>
       //*****************************************************************************
@@ -137,7 +177,8 @@
       function UnityOpenNative() {
         //button download was clicked
         console.log("display native end Scene");
-        document.getElementById("endSceneDiv").style.display = "block";
+        // document.getElementById("endSceneDiv").style.display = "block";
+        handleShowSceneEndElement(true);
       }
       function NativeSendBlobUrl(blob) {
         //video save and send blobUrl
@@ -148,7 +189,7 @@
         //Unity is loaded
         console.log("Unity is loaded");
         console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-        createMediaRecorder();
+        // createMediaRecorder();
         console.log("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
       }
 
