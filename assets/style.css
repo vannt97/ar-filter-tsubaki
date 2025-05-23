@@ -74,7 +74,9 @@ img {
   position: relative;
   pointer-events: none;
 }
-
+#loading-cover .gift-n-model {
+  margin-top: 3rem;
+}
 .gift-n-model img {
   width: 100%;
   position: absolute;

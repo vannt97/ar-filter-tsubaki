@@ -22,6 +22,15 @@ const getBtnShareElement = () => {
   return document.getElementById;
 };
 
+const getLoadingCoverElement = () => {
+  return document.getElementById("loading-cover");
+};
+
+const handleShowLoadingElement = (val) => {
+  const element = getLoadingCoverElement();
+  if (!element) return;
+  element.style.display = val ? "block" : "none";
+};
 const handleShowSceneFirstElement = (val) => {
   const element = getSceneFirstElement();
   if (!element) return;
@@ -48,14 +57,43 @@ function copyToClipboard(coptyText, callback) {
   callback();
 }
 
+const loadGame = () => {
+  const script = document.createElement("script");
+  script.src = loaderUrl;
+  script.onload = () => {
+    const loadingOffset = 2;
+    createUnityInstance(canvas, config, (progress) => {
+      // spinner.style.display = "none";
+      progressBarEmpty.style.display = "";
+      progressBarFull.style.width = `${100 * progress - loadingOffset}%`;
+    })
+      .then((unityInstance) => {
+        // loadingCover.style.display = "none";
+        /*
+          if (canFullscreen) {
+            if (!hideFullScreenButton) {
+              fullscreenButton.style.display = "";
+            }
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1);
+            };
+          }
+          */
+      })
+      .catch((message) => {
+        alert(message);
+      });
+  };
+  document.body.appendChild(script);
+};
+
 const handleEventScanBtn = () => {
   if (!isCheckedPrivacyPolicy())
     return showMessage(
       "Hãy tick vào điều khoản để được tham gia minigame nhé!"
     );
-
   handleShowSceneFirstElement(false);
-  createMediaRecorder();
+  loadGame();
 };
 
 const handleEventBackHomeBtn = () => {
